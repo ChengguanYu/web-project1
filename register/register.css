@@ -1,0 +1,27 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    height: 100%;
+}
+body{
+    /* overflow: hidden; */
+    background-image:   url("../img/background.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.modal-dialog{
+    padding-top: 10%;
+}
+    
+.margins
+{
+    margin: 0px 0px 2% 0px;
+}
+
+.center-text
+{
+    margin: 0px auto;
+}
