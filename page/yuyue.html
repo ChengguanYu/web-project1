@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link
+      href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/yuyue.css" />
+    <script src="../js/yuyue.js"></script>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-default navbar-fixed-top navbar-expand-sm"
+      role="navigation"
+    >
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a href="/" class="nav-link">疫苗预约网</a>
+            </li>
+            <li class="nav-item"><a href="/" class="nav-link">预约首页</a></li>
+            <li class="nav-item">
+              <a href="/info" class="nav-link">查看预约</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav  ml-auto" >
+            <li class="nav-item">
+              <a href="/logout" class="nav-link" ><span class="glyphicon glyphicon-log-out"></span> 退出</a>
+            </li>
+          </ul>
+  
+    </nav>
+
+    <div id="myCarousel" class="carousel slide">
+      <!-- 轮播（Carousel）指标 -->
+
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- 轮播（Carousel）项目 -->
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="../img/banner1.jpg" alt="First slide" />
+        </div>
+
+        <div class="item">
+          <img src="../img/banner2.png" alt="Second slide" />
+        </div>
+
+        <div class="item">
+          <img src="../img/banner3.jpg" alt="Third slide" />
+        </div>
+      </div>
+
+      <!-- 轮播（Carousel）导航 -->
+
+      <a
+        class="left carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-left"
+          aria-hidden="true"
+        ></span>
+
+        <span>Previous</span>
+      </a>
+
+      <a
+        class="right carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-right"
+          aria-hidden="true"
+        ></span>
+
+        <span>Next</span>
+      </a>
+    </div>
+
+    <div id="main">
+      <div>
+        <h3>预约全纪录</h3>
+        <ul id="list"></ul>
+      </div>
+      <div>
+        <h3>我的预约</h3>
+        <p id="tip">暂无信息，快去<a href="./page.html">预约</a>吧</p>
+        <table class="table table-bordered table-striped">
+          <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>联系电话</th>
+            <th>接种时间</th>
+            <th>接种地址</th>
+            <th>操作</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
